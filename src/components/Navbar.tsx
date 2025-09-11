@@ -1,5 +1,6 @@
+
 import React, { useState } from "react";
-import logo from "../assets/dah-logo-removebg-preview.png";
+import logo from "../assets/Data_Access_Hub_logo-removebg-preview.png";
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
