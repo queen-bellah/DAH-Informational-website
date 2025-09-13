@@ -5,9 +5,9 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Aline Mutesi",
-      position: "CEO & Founder",
+      position:  "Founder & CEO ",
       bio: "Passionate about innovation and collaboration, focused on building products that make a real difference.",
-      image: "src/assets/alie.jpg",
+      image: "/Teamimage/alie.jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/mutesi-aline-05",
         twitter: "https://twitter.com/latifa_umunyana",
@@ -16,9 +16,9 @@ const Team = () => {
     },
     {
       name: "Latifa Umunyana",
-      position: "Lead Developer & Founder",
+      position: "Founder & Head of Data and  AI Architecture",
       bio: "Technical architect specializing in AI/ML and scalable systems.",
-      image: "src/assets/kalifa.jpg",
+      image: "/Teamimage/kalifa.jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/latifaumunyana/",
         twitter: "https://twitter.com/latifa_umunyana",
@@ -27,9 +27,9 @@ const Team = () => {
     },
     {
       name: "Fanny Ingabire",
-      position: "UX/UI Designer & Co-Founder",
+      position: " Co-Founder & UX/UI Designer ",
       bio: "Creative designer focused on user-centered design and accessibility.",
-      image: "src/assets/fanny.jpg",
+      image: "/Teamimage/fanny.jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/fanny-ingabire-b60a7b2b5/",
         twitter: "https://twitter.com/latifa_umunyana",
@@ -38,9 +38,9 @@ const Team = () => {
     },
     {
       name: "Queen Bella Umurerwa",
-      position: "CTO & Co-Founder",
+      position: "Co-Founder & CTO ",
       bio: "Full-stack engineer passionate about building accessible platforms.",
-      image: "src/assets/24.07.24-152 (1).jpg",
+      image: "/Teamimage/24.07.24-152 (1).jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/latifa-umunyana",
         twitter: "https://twitter.com/latifa_umunyana",
@@ -49,9 +49,9 @@ const Team = () => {
     },
     {
       name: "Nancy Shimwe Murangira",
-      position: "Head of Research & Co-Founder",
+      position: "Co-Founder & Head of Research",
       bio: "Expert in statistical analysis for social impact.",
-      image: "src/assets/nancy-ishimwe.jpg",
+      image: "/Teamimage/nancy-ishimwe.jpg",
       socials: {
         linkedin: "https://www.linkedin.com/in/latifa-umunyana",
         twitter: "https://twitter.com/latifa_umunyana",
@@ -60,9 +60,9 @@ const Team = () => {
     },
     {
       name: "Shalom Uwamahoro",
-      position: "Product Manager & Co-Founder",
-      bio: "Vision-driven product manager with a strong commitment to creating accessible, user-focused products that drive meaningful change",
-      image: "src/assets/1000347924 (1).png",
+      position: "Co-Founder & Product Manager",
+      bio: "Vision driven product manager with a strong commitment to creating accessible, user-focused products that drive meaningful change",
+      image: "/Teamimage/1000347924 (1).png",
       socials: {
         linkedin: "https://www.linkedin.com/in/shalom-uwamahoro-4b43422b3/",
         twitter: "https://twitter.com/latifa_umunyana",
@@ -74,7 +74,6 @@ const Team = () => {
   return (
     <section id="team" className="py-20 bg-[#E6F4F9] relative">
       <div className="container mx-auto px-6 lg:px-12">
-        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-[#0A1931] mb-3">
             Meet The Team
@@ -82,14 +81,12 @@ const Team = () => {
           <p className="text-md text-[#555]">Powered by Innovation</p>
         </div>
 
-        {/* Team Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 flex flex-col items-center text-center"
             >
-              {/* Avatar */}
               <div className="mb-5">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-[#0096C7]/40 shadow-md">
                   {member.image ? (
@@ -109,7 +106,6 @@ const Team = () => {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="flex flex-col flex-grow">
                 <h3 className="text-lg font-bold text-[#0A1931] mb-1">
                   {member.name}
@@ -121,9 +117,7 @@ const Team = () => {
                   {member.bio}
                 </p>
 
-                {/* Social Links */}
                 <div className="flex items-center justify-center gap-3 mt-auto">
-                  {/* LinkedIn */}
                   <a
                     href={member.socials.linkedin}
                     target="_blank"
@@ -132,7 +126,6 @@ const Team = () => {
                   >
                     <Linkedin className="w-4 h-4" />
                   </a>
-                  {/* Twitter */}
                   <a
                     href={member.socials.twitter}
                     target="_blank"
@@ -141,7 +134,6 @@ const Team = () => {
                   >
                     <Twitter className="w-4 h-4" />
                   </a>
-                  {/* Email */}
                   <a
                     href={`mailto:${member.socials.email}`}
                     className="w-9 h-9 bg-[#0096C7] hover:bg-[#0A1931] text-white rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
