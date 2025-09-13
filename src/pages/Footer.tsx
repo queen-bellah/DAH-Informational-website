@@ -69,8 +69,7 @@
 
 
 import React from "react";
-import bgImage from "../assets/Data_Access_Hub_logo-removebg-preview.png";
-
+import bgImage from "../assets/Data_Access_Hub_logo.png";
 const Footer: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -92,15 +91,10 @@ const Footer: React.FC = () => {
               e.currentTarget.style.display = 'none';
             }}
           />
-         
-          
-        
-          
           <p className="text-sm text-gray-200 font-light">
             One Hub, Endless Insights.
           </p>
         </div>
-
         <div>
           <h3 className="text-lg font-semibold mb-4 border-b border-white/30 inline-block pb-1">
             Quick Links
@@ -129,7 +123,6 @@ const Footer: React.FC = () => {
             </li>
           </ul>
         </div>
-
         <div>
           <h3 className="text-lg font-semibold mb-4 border-b border-white/30 inline-block pb-1">
             Get in Touch
@@ -180,7 +173,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-
       <div className="mt-10 border-t border-white/20 pt-4 text-center text-gray-300 text-sm">
         © {new Date().getFullYear()} Data Access Hub. All Rights Reserved.
       </div>
