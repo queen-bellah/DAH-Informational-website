@@ -1,12 +1,10 @@
 import React from "react";
-import bgImage from "../assets/Data_Access_Hub_logo-removebg-preview.png"; // Ensure this path is correct
+import bgImage from "../assets/Data_Access_Hub_logo.png";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gradient-to-br from-[#1a5f7a] via-[#207d96] to-[#2bb4c3] text-white py-10 px-6 mt-12 shadow-lg">
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-center text-center md:text-left">
-        {/* Logo & Tagline */}
         <div className="flex flex-col items-center md:items-start">
           <img
             src={bgImage}
@@ -17,8 +15,6 @@ const Footer: React.FC = () => {
             One Hub, Endless Insights.
           </p>
         </div>
-
-        {/* Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-4 border-b border-white/30 inline-block pb-1">
             Quick Links
@@ -41,8 +37,6 @@ const Footer: React.FC = () => {
             </li>
           </ul>
         </div>
-
-        {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-4 border-b border-white/30 inline-block pb-1">
             Get in Touch
@@ -56,8 +50,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Bottom Bar */}
       <div className="mt-10 border-t border-white/20 pt-4 text-center text-gray-300 text-sm">
         © {new Date().getFullYear()} Data Access Hub. All Rights Reserved.
       </div>
