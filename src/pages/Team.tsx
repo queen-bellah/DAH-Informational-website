@@ -1,11 +1,10 @@
-
 import { User, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Team = () => {
   const teamMembers = [
     {
       name: "Aline Mutesi",
-      position:  "Founder & CEO ",
+      position: "Founder & CEO ",
       bio: "Passionate about innovation and collaboration, focused on building products that make a real difference.",
       image: "/Teamimage/alie.jpg",
       socials: {
@@ -90,14 +89,15 @@ const Team = () => {
               <div className="mb-5">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-[#0096C7]/40 shadow-md">
                   {member.image ? (
-                   <img
-  src={member.image}
-  alt={member.name}
-  className={`w-full h-full object-cover ${
-    member.name === "Aline Mutesi" ? "object-top" : "object-center"
-  }`}
-/>
-
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className={`w-full h-full object-cover ${
+                        member.name === "Aline Mutesi"
+                          ? "object-top"
+                          : "object-center"
+                      }`}
+                    />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-[#0096C7]/10">
                       <User className="w-14 h-14 text-[#0096C7]" />
