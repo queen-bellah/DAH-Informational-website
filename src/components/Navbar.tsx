@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
                     </li>
                     <li>
                         <a
-                            href="#contact"
+                            href="#footer"
                             className="hover:text-gray-900 transition-colors duration-200 cursor-pointer"
                         >
                             Contact Us
