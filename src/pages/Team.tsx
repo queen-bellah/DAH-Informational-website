@@ -27,7 +27,7 @@ const Team = () => {
     },
     {
       name: "Fanny Ingabire",
-      position: " Co-Founder & UX/UI Designer ",
+      position: " Founder & UX/UI Designer ",
       bio: "Creative designer focused on user-centered design and accessibility.",
       image: "/Teamimage/fanny.jpg",
       socials: {
@@ -38,7 +38,7 @@ const Team = () => {
     },
     {
       name: "Queen Bella Umurerwa",
-      position: "Co-Founder & CTO ",
+      position: "Founder & CTO ",
       bio: "Full-stack engineer passionate about building accessible platforms.",
       image: "/Teamimage/24.07.24-152 (1).jpg",
       socials: {
@@ -49,7 +49,7 @@ const Team = () => {
     },
     {
       name: "Nancy Shimwe Murangira",
-      position: "Co-Founder & Head of Research",
+      position: "Founder & Head of Research",
       bio: "Expert in statistical analysis for social impact.",
       image: "/Teamimage/nancy-ishimwe.jpg",
       socials: {
@@ -60,7 +60,7 @@ const Team = () => {
     },
     {
       name: "Shalom Uwamahoro",
-      position: "Co-Founder & Product Manager",
+      position: "Founder & Product Manager",
       bio: "Vision driven product manager with a strong commitment to creating accessible, user-focused products that drive meaningful change",
       image: "/Teamimage/1000347924 (1).png",
       socials: {
