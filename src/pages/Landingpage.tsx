@@ -15,34 +15,34 @@ const LandingPage: React.FC = () => {
       className="min-h-[calc(100vh-64px)] bg-cover bg-center bg-no-repeat relative overflow-hidden flex items-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#e0f7ff]/30 via-[#e0f7ff]/20 to-transparent"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#e0f7ff]/50 via-[#e0f7ff]/30 to-transparent"></div>
 
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 h-full flex items-center">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
-          {/* Left Column - Content */}
-          <div className="space-y-6 lg:space-y-8 w-full max-w-4xl">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
+          {/* Left Column */}
+          <div className="space-y-6 sm:space-y-7 lg:space-y-8 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1a5f7a] leading-tight">
               One Hub, Endless
               <span className="block text-[#2d8aa6]">Insights...</span>
             </h1>
 
-            <p className="text-lg lg:text-xl xl:text-2xl text-gray-700 leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Making Rwanda’s Knowledge Visible, Searchable, and Accessible.
             </p>
 
-            <p className="text-base lg:text-lg text-gray-600 leading-relaxed max-w-xl">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Discover a centralized platform that connects researchers,
               policymakers, and citizens to Rwanda’s vast repository of data and
               insights.
             </p>
 
-            <p className="text-base lg:text-lg text-gray-700 leading-relaxed max-w-xl">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Our hub empowers decision-making and fosters collaboration to
               drive meaningful impact across sectors.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
                 onClick={() => scrollToSection("about")}
                 className="bg-[#1a5f7a] text-white px-6 py-3 rounded-full text-base font-semibold hover:bg-[#154c61] transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center"
@@ -72,24 +72,24 @@ const LandingPage: React.FC = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-200/50 max-w-md">
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6 border-t border-gray-200/50 max-w-md mx-auto lg:mx-0">
               <div className="text-center">
-                <div className="text-2xl font-bold text-[#1a5f7a]">100K+</div>
-                <div className="text-sm text-gray-600">Data Points</div>
+                <div className="text-xl sm:text-2xl font-bold text-[#1a5f7a]">100K+</div>
+                <div className="text-xs sm:text-sm text-gray-600">Data Points</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-[#1a5f7a]">50+</div>
-                <div className="text-sm text-gray-600">Institutions</div>
+                <div className="text-xl sm:text-2xl font-bold text-[#1a5f7a]">50+</div>
+                <div className="text-xs sm:text-sm text-gray-600">Institutions</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-[#1a5f7a]">24/7</div>
-                <div className="text-sm text-gray-600">Access</div>
+                <div className="text-xl sm:text-2xl font-bold text-[#1a5f7a]">24/7</div>
+                <div className="text-xs sm:text-sm text-gray-600">Access</div>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Floating Cards, aligned vertically with motion */}
-          <div className="absolute right-0 top-20 flex flex-col items-end gap-6 pr-8 lg:pr-16">
+          {/* Right Column - Floating Cards */}
+          <div className="hidden md:flex flex-col items-end gap-6 pr-4 lg:pr-12">
             {[
               {
                 title: "Real-time Analytics",
@@ -127,17 +127,19 @@ const LandingPage: React.FC = () => {
             ].map(({ title, description, extra }, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg p-4 shadow-lg w-60 transition-transform hover:scale-105"
+                className="bg-white rounded-lg p-4 shadow-lg w-56 sm:w-64 transition-transform hover:scale-105"
                 style={{
                   transform: `translateX(${
-                    idx % 2 === 0 ? "10px" : "-10px"
+                    idx % 2 === 0 ? "8px" : "-8px"
                   }) rotate(${idx % 2 ? "2deg" : "-2deg"})`,
                 }}
               >
-                <div className="text-sm font-semibold text-[#1a5f7a] mb-1">
+                <div className="text-sm sm:text-base font-semibold text-[#1a5f7a] mb-1">
                   {title}
                 </div>
-                <div className="text-xs text-gray-600">{description}</div>
+                <div className="text-xs sm:text-sm text-gray-600">
+                  {description}
+                </div>
                 {extra}
               </div>
             ))}
@@ -145,15 +147,15 @@ const LandingPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Scroll indicator - positioned at bottom */}
-      <div className="absolute bottom-4 lg:bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
         <button
           onClick={() => scrollToSection("about")}
           className="text-[#1a5f7a] hover:text-[#154c61] transition-colors duration-300"
           aria-label="Scroll to next section"
         >
           <svg
-            className="w-5 h-5"
+            className="w-6 h-6 sm:w-7 sm:h-7"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
